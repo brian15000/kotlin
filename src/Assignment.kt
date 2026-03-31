@@ -73,15 +73,15 @@ fun dayMessage(dayOfWeek: String) {
     }
 
 fun trafficAction(trafficColor: String) {
-    when (trafficColor=="Red")
-        println("Stop")
-    when (trafficColor=="yellow")
-        println("Caution")
-    when (trafficColor=="green")
-        println("Go")
-    else
-        println("Invalid")
-}
+        if (trafficColor == "Red")
+            println("Stop")
+        else if (trafficColor == "yellow")
+            println("Caution")
+        else if (trafficColor == "green")
+            println("Go")
+        else
+            println("Invalid")
+    }
 
 
 
