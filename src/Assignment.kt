@@ -1,3 +1,6 @@
+import kotlin.collections.plusAssign
+import kotlin.compareTo
+
 fun main() {
     var studentName: String = "Alex Morgan"
     val studentId: Int = 2024001
@@ -23,7 +26,16 @@ fun main() {
 
     println(dayMessage("Monday"))
     println(calculateDiscount(20.0,10.0))
+
+    println(number(0))
+
+
+
+
+
 }
+
+
 
 // FUNCTION
 fun displayMenu() {
@@ -71,6 +83,7 @@ fun dayMessage(dayOfWeek: String) {
         "Friday" -> println("TGIF")
         else -> println("Regular Weekday")
     }
+    }
 
 fun trafficAction(trafficColor: String) {
         if (trafficColor == "Red")
@@ -85,4 +98,19 @@ fun trafficAction(trafficColor: String) {
 
 
 
-}
+    //LOOPS
+    //4.1
+fun number(start: Int) {
+        var num = start   // mutable copy
+
+        while (num < 10) {
+            num += 1
+            print("$num ")
+
+
+
+            }
+    }
+
+
+
